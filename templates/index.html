@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {{ section.content | safe }}
+
+    <h2>Recent Write-ups</h2>
+    <ul>
+    {% set research_section = get_section(path="research/_index.md") %}
+    {% for page in research_section.pages %}
+        <li>
+            <a href="{{ page.permalink }}">{{ page.title }}</a> 
+            - <em>{{ page.date | date(format="%Y-%m-%d") }}</em>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock content %}

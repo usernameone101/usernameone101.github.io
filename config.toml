@@ -1,0 +1,14 @@
+base_url = "https://usernameone101.github.io/"
+compile_sass = true
+build_search_index = false
+title = "Systems & Security Research"
+description = "Portfolio and technical write-ups covering hypervisors, reverse engineering, and systems architecture."
+default_language = "en"
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+[extra]
+author = "Ben Lye"
+github = "https://github.com/usernameone101"

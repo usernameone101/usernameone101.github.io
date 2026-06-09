@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
+
+{% block content %}
+    <article>
+        <h2>{{ page.title }}</h2>
+        <p><em>Published on: {{ page.date | date(format="%Y-%m-%d") }}</em></p>
+        <hr>
+        {{ page.content | safe }}
+    </article>
+{% endblock content %}
